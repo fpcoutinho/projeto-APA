@@ -20,11 +20,14 @@ def printMatriz(matriz):
 
 def lerInstancia(arquivo):
     instancia = open(arquivo, 'r')
-    linha = 0
-    for l in instancia:
-        print("linha " + str(linha) + ": " + l)
-        linha+=1
+    instancia = instancia.readlines()
+    numconvidados = 0
+    for i in range(len(instancia)):
+        print("linha " + str(i) + ": " + instancia[i])
+        if (instancia[i] == "#quantidade_convidados\n"):
+            numconvidados = instancia[i+1]
     print()
+    print(numconvidados)
 
 #n = int(input('Quantos convidados? '))
 # numMesas =  int(input('Quantas mesas? '))
