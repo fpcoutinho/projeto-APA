@@ -18,6 +18,11 @@ def printMatriz(matriz):
                 print(" \t", end="")
         print()
 
+def lerInstancia(arquivo):
+    instancia = open(arquivo, 'r')
+    for l in instancia:
+        print(l)
+
 
 n = int(input('Quantos convidados? '))
 # numMesas =  int(input('Quantas mesas? '))
