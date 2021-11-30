@@ -20,14 +20,17 @@ def printMatriz(matriz):
 
 def lerInstancia(arquivo):
     instancia = open(arquivo, 'r')
+    linha = 0
     for l in instancia:
-        print(l)
+        print("linha " + str(linha) + ": " + l)
+        linha+=1
+    print()
 
-
-n = int(input('Quantos convidados? '))
+#n = int(input('Quantos convidados? '))
 # numMesas =  int(input('Quantas mesas? '))
 # limMin =  int(input('Qual o mínimo de pessoas que devem sentar em cada mesa? '))
 # limMax =  int(input('E qual o máximo? '))
 
-matriz = criarMatriz(n)
-printMatriz(matriz)
+#matriz = criarMatriz(n)
+#printMatriz(matriz)
+lerInstancia("instancias\/n20c5_A.txt")
