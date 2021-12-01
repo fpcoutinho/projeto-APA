@@ -4,9 +4,7 @@ def criarMatriz(numConvidados, listaDeAfinidades):
     matriz = [[0 for _ in range(numConvidados)] for _ in range(numConvidados)]
     
     for l in range(numConvidados):
-        for c in range(numConvidados):
-            if(l < c):
-                matriz[l][c] = randint(-9,9)
+        matriz[l][c] = randint(-9,9)
     return matriz
 
 def printMatriz(matriz):

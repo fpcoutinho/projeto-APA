@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee48eb0c-e443-4e2d-b4dd-7bcc01678bdd" name="Changes" comment="iterando pelo arquivo e já lendo o número de convidados.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ee48eb0c-e443-4e2d-b4dd-7bcc01678bdd" name="Changes" comment="lê e printa matriz de afinidade.">
       <change beforePath="$PROJECT_DIR$/projeto.py" beforeDir="false" afterPath="$PROJECT_DIR$/projeto.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638307934870</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lê e printa matriz de afinidade.">
+      <created>1638316998051</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638316998051</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +126,7 @@
     <MESSAGE value="add instancias." />
     <MESSAGE value="arquivos lidos." />
     <MESSAGE value="iterando pelo arquivo e já lendo o número de convidados." />
-    <option name="LAST_COMMIT_MESSAGE" value="iterando pelo arquivo e já lendo o número de convidados." />
+    <MESSAGE value="lê e printa matriz de afinidade." />
+    <option name="LAST_COMMIT_MESSAGE" value="lê e printa matriz de afinidade." />
   </component>
 </project>
