@@ -1,7 +1,7 @@
 from random import randint
 
-def criarMatriz(numConvidados):
-    matriz = [["-" for _ in range(numConvidados)] for _ in range(numConvidados)]
+def criarMatriz(numConvidados, listaDeAfinidades):
+    matriz = [[0 for _ in range(numConvidados)] for _ in range(numConvidados)]
     
     for l in range(numConvidados):
         for c in range(numConvidados):
@@ -21,13 +21,18 @@ def printMatriz(matriz):
 def lerInstancia(arquivo):
     instancia = open(arquivo, 'r')
     instancia = instancia.readlines()
-    numconvidados = 0
+    numConvidados = 0
+    matriz = []
+
     for i in range(len(instancia)):
-        print("linha " + str(i) + ": " + instancia[i])
+        #print("linha " + str(i) + ": " + instancia[i])
         if (instancia[i] == "#quantidade_convidados\n"):
-            numconvidados = instancia[i+1]
+            numConvidados = int(instancia[i+1])
+        if(instancia[i] == "#beneficios\n"):
+            matriz = criarMatriz(numConvidados, instancia[i:len(instancia)])
+    print(numConvidados)
     print()
-    print(numconvidados)
+    printMatriz(matriz)
 
 #n = int(input('Quantos convidados? '))
 # numMesas =  int(input('Quantas mesas? '))
